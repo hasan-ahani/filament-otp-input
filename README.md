@@ -6,6 +6,8 @@
 [![License](https://img.shields.io/github/license/hasan-ahani/filament-otp-input?style=flat-square)](https://github.com/hasan-ahani/filament-otp-input/blob/main/LICENSE.md)
 
 ![Preview](preview.png)
+
+
 `filament-otp-input` is a package built for [Filament](https://filamentphp.com) that provides an enhanced password input form component that offers you the ability to add the following
 features to your password inputs:
 
@@ -26,7 +28,6 @@ You can install the package via composer:
 composer require hasan-ahani/filament-otp-input
 ```
 
-
 ## Usage
 Inside a form schema, you can use the Otp input like this:
 ```php
@@ -44,7 +45,8 @@ public function form(Form $form): Form
 }
 ```
 The code above will render a otp input inside the form.
-![Otp input](docs/otp.png)
+
+ ![Otp input](docs/otp.png)
 
 ## Number input
 If you want to change number input, The following code will render the inputs of use number:
@@ -64,6 +66,7 @@ public function form(Form $form): Form
 }
 ```
 The code above will render a otp input  inside the form.
+
 ![Otp input number](docs/otp-number.png)
 
 ## Number input
