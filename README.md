@@ -1,20 +1,18 @@
 # Filament otp input
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/hasan-ahani/filament-otp-input.svg?style=flat-square)](https://packagist.org/packages/hasan-ahani/filament-otp-input)
-![Tests](https://github.com/hasan-ahani/filament-otp-input/workflows/Tests/badge.svg?style=flat-square)
 [![Total Downloads](https://img.shields.io/packagist/dt/hasan-ahani/filament-otp-input.svg?style=flat-square)](https://packagist.org/packages/hasan-ahani/filament-otp-input)
 [![PHP from Packagist](https://img.shields.io/packagist/php-v/hasan-ahani/filament-otp-input?style=flat-square)](https://packagist.org/packages/hasan-ahani/filament-otp-input)
 [![License](https://img.shields.io/github/license/hasan-ahani/filament-otp-input?style=flat-square)](https://github.com/hasan-ahani/filament-otp-input/blob/main/LICENSE.md)
 
-![social image](https://banners.beyondco.de/Filament%20Password%20Input.png?theme=light&packageManager=composer+require&packageName=rawilk%2Ffilament-password-input&pattern=architect&style=style_1&description=Enhanced+password+input+component+for+filament.&md=1&showWatermark=0&fontSize=100px&images=lock-closed)
-
-
+![Preview](preview.png)
 `filament-otp-input` is a package built for [Filament](https://filamentphp.com) that provides an enhanced password input form component that offers you the ability to add the following
 features to your password inputs:
 
--   Reveal password toggle
--   Copy to clipboard
--   Generate new password button
+-   Customize number of input
+-   Action after filling the code
+-   Next entry after filling
+-   Previous entry with backspace
 
 
 
@@ -46,7 +44,7 @@ public function form(Form $form): Form
 }
 ```
 The code above will render a otp input inside the form.
-![Otp input](https://github.com/hasan-ahani/filament-otp-input/raw/main/docs/otp.png)
+![Otp input](docs/otp.png)
 
 ## Number input
 If you want to change number input, The following code will render the inputs of use number:
@@ -66,7 +64,29 @@ public function form(Form $form): Form
 }
 ```
 The code above will render a otp input  inside the form.
-![Otp input](https://github.com/hasan-ahani/filament-otp-input/raw/main/docs/otp-number.png)
+![Otp input number](docs/otp-number.png)
+
+## Number input
+If you want to get code after filled, The following this:
+```php
+use HasanAhani\FilamentOtpInput\Components;
+use Filament\Forms\Form;
+
+public function form(Form $form): Form
+{
+    return $form
+        ->schema([
+            // ...
+            OtpInput::make('otp')
+                ->numberInput(8)
+                ->afterStateUpdated(function (string $state){
+                    dd($state);
+                    // submit form or save record
+                })
+                ->label('Otp'),
+        ]);
+}
+```
 
 ## Testing
 
