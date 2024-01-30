@@ -53,7 +53,7 @@
         "post-autoload-dump": "@php ./vendor/bin/testbench package:discover --ansi",
         "clear": "@php vendor/bin/testbench package:purge-filament-otp-input --ansi",
         "analyse": "vendor/bin/phpstan analyse",
-        "test": "vendor/bin/pest",
+        "test": "vendor/bin/pest --parallel",
         "test-coverage": "vendor/bin/pest --coverage",
         "format": "vendor/bin/pint"
     },
@@ -69,10 +69,7 @@
         "laravel": {
             "providers": [
                 "HasanAhani\\FilamentOtpInput\\FilamentOtpInputServiceProvider"
-            ],
-            "aliases": {
-                "Skeleton": "HasanAhani\\FilamentOtpInput\\Facades\\Skeleton"
-            }
+            ]
         }
     },
     "minimum-stability": "dev",
