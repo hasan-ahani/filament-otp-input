@@ -6,16 +6,16 @@
 ![Tests](https://github.com/hasan-ahani/filament-otp-input/workflows/Tests/badge.svg?style=flat-square)
 [![License](https://img.shields.io/github/license/hasan-ahani/filament-otp-input?style=flat-square)](https://github.com/hasan-ahani/filament-otp-input/blob/main/LICENSE.md)
 
-![Preview](https://raw.githubusercontent.com/hasan-ahani/filament-otp-input/master/preview.png)
+![Preview](https://raw.githubusercontent.com/hasan-ahani/filament-otp-input/master/docs/thumbnail.jpg)
 
 
-`filament-otp-input` is a package built for [Filament](https://filamentphp.com) that provides an enhanced password input form component that offers you the ability to add the following
-features to your password inputs:
+`filament-otp-input` is a package built for [Filament](https://filamentphp.com) that provides an OTP input form component that offers you the ability to add the following
+features:
 
--   Customize number of input
--   Action after filling the code
--   Next entry after filling
--   Previous entry with backspace
+-   Customize the number of inputs
+-   Perform an action after filling the code
+-   Move to the next input after filling
+-   Move to the previous input with backspaces
 
 
 
@@ -47,8 +47,8 @@ The code above will render a otp input inside the form.
 
  ![Otp input](https://raw.githubusercontent.com/hasan-ahani/filament-otp-input/master/docs/otp.png)
 
-## Number input
-If you want to change number input, The following code will render the inputs of use number:
+## Number inputs
+If the number of entries you want is less or more than the default 4 numbers, you can change it according to the example below
 ```php
 use HasanAhani\FilamentOtpInput\Components;
 use Filament\Forms\Form;
@@ -59,17 +59,17 @@ public function form(Form $form): Form
         ->schema([
             // ...
             OtpInput::make('otp')
-                ->numberInput(8)
+                ->numberInput(6)
                 ->label('Otp'),
         ]);
 }
 ```
-The code above will render a otp input  inside the form.
+The above code creates 6 inputs for entering the OTP code.
 
 ![Otp input number](https://raw.githubusercontent.com/hasan-ahani/filament-otp-input/master/docs/otp-number.png)
 
 ## Get Code
-If you want to get code after filled, The following this:
+If you need to receive the code after entering it completely, proceed as in the example below
 ```php
 use HasanAhani\FilamentOtpInput\Components;
 use Filament\Forms\Form;
