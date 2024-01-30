@@ -107,4 +107,4 @@ Please see [CHANGELOG](https://github.com/hasan-ahani/filament-otp-input/blob/ma
 
 ## License
 
-The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+The MIT License (MIT). Please see [License File](https://github.com/hasan-ahani/blob/master/LICENSE.md) for more information.
