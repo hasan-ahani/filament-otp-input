@@ -13,8 +13,6 @@
     $suffixLabel = $getSuffixLabel();
     $statePath = $getStatePath();
     $numberInput = $getNumberInput();
-    $hasAction = $getHasAction();
-    $actionComplete = $getActionComplete();
     $isAutofocused = $isAutofocused();
 @endphp
 
