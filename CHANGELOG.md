@@ -2,6 +2,10 @@
 
 All notable changes to `filament-otp-input` will be documented in this file.
 
-## 0.9.0 - 202X-XX-XX
+## 1.0.0 - 2024-01-29
 
-- initial release
+- Initial release
+
+## 1.0.1 - 2024-01-29
+
+- Fix bug

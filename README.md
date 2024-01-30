@@ -5,7 +5,7 @@
 [![PHP from Packagist](https://img.shields.io/packagist/php-v/hasan-ahani/filament-otp-input?style=flat-square)](https://packagist.org/packages/hasan-ahani/filament-otp-input)
 [![License](https://img.shields.io/github/license/hasan-ahani/filament-otp-input?style=flat-square)](https://github.com/hasan-ahani/filament-otp-input/blob/main/LICENSE.md)
 
-![Preview](preview.png)
+![Preview](https://raw.githubusercontent.com/hasan-ahani/filament-otp-input/master/preview.png)
 
 
 `filament-otp-input` is a package built for [Filament](https://filamentphp.com) that provides an enhanced password input form component that offers you the ability to add the following
@@ -17,8 +17,6 @@ features to your password inputs:
 -   Previous entry with backspace
 
 
-
-This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
 
 ## Installation
 
@@ -46,7 +44,7 @@ public function form(Form $form): Form
 ```
 The code above will render a otp input inside the form.
 
- ![Otp input](docs/otp.png)
+ ![Otp input](https://raw.githubusercontent.com/hasan-ahani/filament-otp-input/master/docs/otp.png)
 
 ## Number input
 If you want to change number input, The following code will render the inputs of use number:
@@ -67,9 +65,9 @@ public function form(Form $form): Form
 ```
 The code above will render a otp input  inside the form.
 
-![Otp input number](docs/otp-number.png)
+![Otp input number](https://raw.githubusercontent.com/hasan-ahani/filament-otp-input/master/docs/otp-number.png)
 
-## Number input
+## Get Code
 If you want to get code after filled, The following this:
 ```php
 use HasanAhani\FilamentOtpInput\Components;
@@ -99,20 +97,12 @@ composer test
 
 ## Changelog
 
-Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
-
-## Contributing
-
-Please see [CONTRIBUTING](.github/CONTRIBUTING.md) for details.
-
-## Security Vulnerabilities
-
-Please review [our security policy](../../security/policy) on how to report security vulnerabilities.
+Please see [CHANGELOG](https://github.com/hasan-ahani/filament-otp-input/blob/master/CHANGELOG.md) for more information on what has changed recently.
 
 ## Credits
 
 - [Hasan Ahani](https://github.com/hasan-ahani)
-- [All Contributors](../../contributors)
+- [All Contributors](https://github.com/hasan-ahani/filament-otp-input/graphs/contributors)
 
 ## License
 
