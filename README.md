@@ -6,8 +6,7 @@
 ![Tests](https://github.com/hasan-ahani/filament-otp-input/workflows/Tests/badge.svg?style=flat-square)
 [![License](https://img.shields.io/github/license/hasan-ahani/filament-otp-input?style=flat-square)](https://github.com/hasan-ahani/filament-otp-input/blob/main/LICENSE.md)
 
-![Preview](https://raw.githubusercontent.com/hasan-ahani/filament-otp-input/master/docs/thumbnail.jpg)
-
+<img class="filament-hidden" src="https://raw.githubusercontent.com/hasan-ahani/filament-otp-input/master/docs/thumbnail.jpg" alt="Filament Otp input" />
 
 `filament-otp-input` is a package built for [Filament](https://filamentphp.com) that provides an OTP input form component that offers you the ability to add the following
 features:
