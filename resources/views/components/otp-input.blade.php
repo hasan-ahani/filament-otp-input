@@ -14,6 +14,7 @@
     $statePath = $getStatePath();
     $numberInput = $getNumberInput();
     $isAutofocused = $isAutofocused();
+    $inputType = $getType();
 @endphp
 
 <x-dynamic-component
@@ -31,6 +32,7 @@
     	    state: $wire.$entangle('{{ $getStatePath() }}'),
     	    length: {{$numberInput}},
     	    autoFocus: '{{$isAutofocused}}',
+    	    type: '{{$inputType}}',
             init: function(){
                 if (this.autoFocus){
                     this.$refs[1].focus();
@@ -100,7 +102,7 @@
                     "
                 >
                     <input
-                        type="number"
+                        type="{{$inputType}}"
                         maxlength="1"
                         x-ref="{{$column}}"
                         required

@@ -89,6 +89,27 @@ public function form(Form $form): Form
 }
 ```
 
+
+## Input type
+By default, the input type is set to "number". If you need to change it to "password" or "text", you can use the following methods:
+```php
+use HasanAhani\FilamentOtpInput\Components;
+use Filament\Forms\Form;
+
+public function form(Form $form): Form
+{
+    return $form
+        ->schema([
+            // ...
+            OtpInput::make('otp')
+                ->password()
+                // or
+                ->text()
+                ->label('Otp'),
+        ]);
+}
+```
+
 ## Testing
 
 ```bash
