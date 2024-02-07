@@ -79,8 +79,8 @@
                 e.preventDefault();
             },
         }">
-        <div class="flex justify-between gap-6">
-
+        <div class="flex justify-between gap-6 fi-otp-input-container">
+ 
             @foreach(range(1, $numberInput) as $column)
 
                 <x-filament::input.wrapper
