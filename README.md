@@ -1,4 +1,4 @@
-# Filament otp input
+# Filament One-Time Passcode (OTP) Input Form Component
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/hasan-ahani/filament-otp-input.svg?style=flat-square)](https://packagist.org/packages/hasan-ahani/filament-otp-input)
 [![Total Downloads](https://img.shields.io/packagist/dt/hasan-ahani/filament-otp-input.svg?style=flat-square)](https://packagist.org/packages/hasan-ahani/filament-otp-input)
@@ -6,10 +6,9 @@
 ![Tests](https://github.com/hasan-ahani/filament-otp-input/workflows/Tests/badge.svg?style=flat-square)
 [![License](https://img.shields.io/github/license/hasan-ahani/filament-otp-input?style=flat-square)](https://github.com/hasan-ahani/filament-otp-input/blob/main/LICENSE.md)
 
-<img class="filament-hidden" src="https://raw.githubusercontent.com/hasan-ahani/filament-otp-input/master/docs/thumbnail.jpg" alt="Filament Otp input" />
+<img class="filament-hidden" src="https://raw.githubusercontent.com/hasan-ahani/filament-otp-input/master/docs/thumbnail.jpg" alt="One-Time Passcode (OTP) input for Filament" />
 
-`filament-otp-input` is a package built for [Filament](https://filamentphp.com) that provides an OTP input form component that offers you the ability to add the following
-features:
+`filament-otp-input` is a package built for [Filament](https://filamentphp.com) that provides a One-Time Passcode (OTP) input form component that offers you the ability to add the following features:
 
 -   Customize the number of inputs
 -   Perform an action after filling the code
