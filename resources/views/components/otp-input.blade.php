@@ -102,6 +102,7 @@
                     "
                 >
                     <input
+                        {{$isDisabled ? 'disabled' : ''}}
                         type="{{$inputType}}"
                         maxlength="1"
                         x-ref="{{$column}}"
