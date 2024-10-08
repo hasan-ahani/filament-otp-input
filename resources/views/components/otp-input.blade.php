@@ -16,6 +16,7 @@
     $isAutofocused = $isAutofocused();
     $inputType = $getType();
     $autocomplete = $getAutocomplete();
+    $isRtl = $getInputsContainerDirection();
 @endphp
 
 <x-dynamic-component
@@ -80,7 +81,7 @@
                 e.preventDefault();
             },
         }">
-        <div class="flex justify-between gap-6 fi-otp-input-container">
+        <div class="flex justify-between gap-6 fi-otp-input-container" dir="{{ $isRtl ? 'rtl' : 'ltr' }}">
 
             @foreach(range(1, $numberInput) as $column)
 
