@@ -23,9 +23,9 @@ class OtpInput extends Field implements Contracts\CanBeLengthConstrained, Contra
 
     protected int | \Closure | null $numberInput = 4;
 
+    protected bool | \Closure | null $isRtl = false;
 
     protected string | \Closure | null $type = 'number';
-
 
     public function numberInput(int | \Closure $number = 4):static
     {
@@ -42,12 +42,14 @@ class OtpInput extends Field implements Contracts\CanBeLengthConstrained, Contra
     public function password(): static
     {
         $this->type = 'password';
+
         return $this;
     }
 
     public function text(): static
     {
         $this->type = 'text';
+
         return $this;
     }
 
@@ -56,4 +58,15 @@ class OtpInput extends Field implements Contracts\CanBeLengthConstrained, Contra
         return $this->evaluate($this->type);
     }
 
+    public function rtl(bool|\Closure $condition = false): static
+    {
+        $this->isRtl = $condition;
+
+        return $this;
+    }
+
+    public function getInputsContainerDirection(): string
+    {
+        return $this->evaluate($this->isRtl);
+    }
 }

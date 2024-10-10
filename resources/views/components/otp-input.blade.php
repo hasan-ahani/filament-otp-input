@@ -16,6 +16,7 @@
     $isAutofocused = $isAutofocused();
     $inputType = $getType();
     $autocomplete = $getAutocomplete();
+    $isRtl = $getInputsContainerDirection();
 @endphp
 
 <x-dynamic-component
@@ -25,6 +26,7 @@
     :label-sr-only="$isLabelHidden()"
     :helper-text="$getHelperText()"
     :hint="$getHint()"
+    :hint-actions="$getHintActions()"
     :hint-icon="$getHintIcon()"
     :required="$isRequired()"
     :state-path="$getStatePath()"
@@ -80,7 +82,7 @@
                 e.preventDefault();
             },
         }">
-        <div class="flex justify-between gap-6 fi-otp-input-container">
+        <div class="flex justify-between gap-6 fi-otp-input-container" dir="{{ $isRtl ? 'rtl' : 'ltr' }}">
 
             @foreach(range(1, $numberInput) as $column)
 
