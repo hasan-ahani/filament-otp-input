@@ -106,6 +106,7 @@
                 >
                     <input
                         {{$isDisabled ? 'disabled' : ''}}
+                        {{$loop->first && $isAutofocused ? 'autofocus' : ''}}
                         type="{{$inputType}}"
                         maxlength="1"
                         x-ref="{{$column}}"
